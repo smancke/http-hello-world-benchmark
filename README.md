@@ -14,8 +14,8 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 | Framework                | Req/sec (Docker)    | Req/sec (Native)
 |--------------------------|--------------------:|------------------:|
 | nginx                    | 105012              | 105844            |
-| Spring-Boot (first run)  |  9424               |  9625             |
-| Spring-Boot (second run) | 15739               | 17568             |
+| Spring-Boot (first run)  | 15848               | 18138             |
+| Spring-Boot (second run) | 27942               | 28170             |
 | Java Spark (first run)   | 73393               | 87787             |
 | Java Spark (second run)  | 84323               | 97970             |
 | Golang                   | 122949              | 126742            |
