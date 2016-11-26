@@ -3,6 +3,7 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 
 * NGINX 1.11.5
 * Java Spring-Boot 1.4.2, Oracle JDK 8
+* Java Spark Framework
 * Golang 1.7
 * NodeJS 7.2
 
@@ -10,13 +11,15 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 
 ![Result](result.png)
 
-| Framework                | Requests per second |
-|--------------------------|---------------------|
-| nginx                    | 25861               |
-| Spring-Boot (first run)  |  6041               |
-| Spring-Boot (second run) | 10705               |
-| Golang                   | 60662               |
-| NodeJS                   | 20812               |
+| Framework                | Req/sec (Docker)    | Req/sec (Native)
+|--------------------------|--------------------:|------------------:|
+| nginx                    | 25861               | 105844            |
+| Spring-Boot (first run)  |  6041               |  9625             |
+| Spring-Boot (second run) | 10705               | 17568             |
+| Java Spark (first run)   | 41443               | 87787             |
+| Java Spark (second run)  | 47698               | 97970             |
+| Golang                   | 60662               | 126742            |
+| NodeJS                   | 20812               | 27000             |
 
 
 # Test setup

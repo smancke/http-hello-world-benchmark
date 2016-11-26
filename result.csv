@@ -1,5 +1,6 @@
-25861;nginx
-6041;Spring run1
-10705;Spring run2
-60662;Golang
-20812;NodeJS
+Framework;Docker;Native
+nginx;25861;105844
+Spring;10705;17568
+Java Spark;47698;97970
+Golang;60662;126742
+NodeJS;20812;27000
