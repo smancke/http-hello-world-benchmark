@@ -1,21 +1,14 @@
-# http-hello-world-benchmark
-Mini bechmark, comparing the performance HTTP 'hello world' on different stacks
+# HTTP 'Hello World' Benchmark
+Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 
-Compared Language/Frameworks:
 * NGINX 1.11.5
 * Java Spring-Boot 1.4.2, Oracle JDK 8
 * Golang 1.7
 * NodeJS 7.2
 
-# Test setup
-* Ubuntu 16.04.
-* i7-6600U CPU @ 2.60GHz (2 cores, with hyper threadding)
-* All Servers are running in a docker container (v1.12.3)
-* Tested with [wrk](https://github.com/wg/wrk) (v4.0.0): 4 threads, 20 connections, 20 seconds
-
 # Results
 
-[](result.png)
+![Result](result.png)
 
 | Framework                | Requests per second |
 |--------------------------|---------------------|
@@ -24,4 +17,11 @@ Compared Language/Frameworks:
 | Spring-Boot (second run) | 10705               |
 | Golang                   | 60662               |
 | NodeJS                   | 20812               |
+
+
+# Test setup
+* Ubuntu 16.04.
+* i7-6600U CPU @ 2.60GHz (2 cores, with hyper threadding)
+* All Servers are running in a docker container (v1.12.3)
+* Tested with [wrk](https://github.com/wg/wrk) (v4.0.0): 4 threads, 20 connections, 20 seconds
 
