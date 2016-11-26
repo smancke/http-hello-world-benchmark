@@ -25,6 +25,7 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 # Test setup
 * Ubuntu 16.04.
 * i7-6600U CPU @ 2.60GHz (2 cores, with hyper threadding)
-* All Servers are running in a docker container (v1.12.3)
 * Tested with [wrk](https://github.com/wg/wrk) (v4.0.0): 4 threads, 20 connections, 20 seconds
+* Setup 1: All Servers are running in a docker container (v1.12.3)
+* Setup 2: Local Running Services, without docker
 
