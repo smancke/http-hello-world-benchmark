@@ -1,0 +1,9 @@
+set title 'HTTP Hello World'
+set ylabel 'Requests per Second'
+set grid
+set term png
+set boxwidth 0.5
+set output 'result.png'
+set datafile separator ";"
+set style fill solid
+plot 'result.csv' using 0:1:xtic(2) with boxes
