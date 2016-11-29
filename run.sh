@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker rm -f spark_hello hello_nginx hello_node hello_golang hello_cgi springboot_hello undertow_hello fasthttp_hello cgi_hello 2> /dev/null 1> /dev/null
+docker rm -f spark_hello hello_nginx hello_node hello_golang hello_cgi hello_cgid springboot_hello undertow_hello fasthttp_hello cgi_hello cgid_hello 2> /dev/null 1> /dev/null
 
 pid=$(docker run --net=host -d --name undertow_hello -p 8080:8080 hello_undertow)
 sleep 10
@@ -39,6 +39,16 @@ echo "-- HELLO Apache/CGI/Shell 1 --"
 wrk -c 20 -t 4 -d 20 http://127.0.0.1:80/cgi-bin/hello.cgi
 echo
 echo "-- HELLO Apache/CGI/Shell 2 --"
+wrk -c 20 -t 4 -d 20 http://127.0.0.1:80/cgi-bin/hello.cgi
+docker rm -f $pid
+
+pid=$(docker run --net=host -d --name cgid_hello -p 80:80 hello_cgid)
+sleep 5
+echo
+echo "-- HELLO Apache/cgid/Shell 1 --"
+wrk -c 20 -t 4 -d 20 http://127.0.0.1:80/cgi-bin/hello.cgi
+echo
+echo "-- HELLO Apache/cgid/Shell 2 --"
 wrk -c 20 -t 4 -d 20 http://127.0.0.1:80/cgi-bin/hello.cgi
 docker rm -f $pid
 

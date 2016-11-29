@@ -12,7 +12,7 @@ RUN chown 0:0 /usr/lib/cgi-bin/hello.cgi && chmod 755 /usr/lib/cgi-bin/hello.cgi
 
 EXPOSE 80
 
-CMD ["/usr/bin/env", "-i", "LANG=C", \
+CMD ["/usr/bin/env", "-i", "LC_ALL=C", \
     "PATH=/usr/sbin:/usr/bin:/sbin:/bin", \
     "APACHE_RUN_USER=www-data", "APACHE_RUN_GROUP=www-data", \
     "APACHE_RUN_DIR=/var/run/apache2", \
