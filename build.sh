@@ -12,6 +12,8 @@ cd undertow && docker build -t hello_undertow .
 cd -
 cd springboot && docker build -t hello_springboot .
 cd -
+cd shell-CGI && docker build -t hello_cgi .
+cd -
 
 docker pull node
 docker pull golang
