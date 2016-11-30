@@ -12,6 +12,7 @@ cd undertow && docker build -t hello_undertow .
 cd -
 cd springboot && docker build -t hello_springboot .
 cd -
+cd swift-vapor && docker build -t hello_swift_vapor .
 
 docker pull node
 docker pull golang
