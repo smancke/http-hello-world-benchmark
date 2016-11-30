@@ -13,6 +13,8 @@ cd -
 cd springboot && docker build -t hello_springboot .
 cd -
 cd swift-vapor && docker build -t hello_swift_vapor .
+cd -
+cd swift-perfect && docker build -t hello_swift_perfect .
 
 docker pull node
 docker pull golang

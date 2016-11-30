@@ -74,3 +74,10 @@ echo
 echo "-- HELLO Swift/Vapor --"
 wrk -c 20 -t 4 -d 20 http://127.0.0.1:8080
 docker rm -f $pid
+
+pid=$(docker run $NET -d --name perfect_hello -p 8080:8080 hello_swift_perfect)
+sleep 1
+echo
+echo "-- HELLO Swift/Perfect --"
+wrk -c 20 -t 4 -d 20 http://127.0.0.1:8080
+docker rm -f $pid
