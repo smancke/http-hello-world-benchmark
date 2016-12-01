@@ -15,6 +15,8 @@ cd -
 cd swift-vapor && docker build -t hello_swift_vapor .
 cd -
 cd swift-perfect && docker build -t hello_swift_perfect .
+cd -
+cd swift-kitura && docker build -t hello_swift_kitura .
 
 docker pull node
 docker pull golang
