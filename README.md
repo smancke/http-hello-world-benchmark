@@ -8,6 +8,7 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 * Golang 1.7
 * Golang 1.7 with [Fasthttp](https://github.com/valyala/fasthttp)
 * NodeJS 7.2
+* CGI (Apache+mksh)
 
 # Results
 
@@ -25,6 +26,7 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 | Golang                     | 122949              | 126742            |
 | Golang - fasthttp          | 192478              | 196169            |
 | NodeJS                     | 46803               | 49421             |
+| CGI                        | 3069                |                   |
 
 
 # Test setup

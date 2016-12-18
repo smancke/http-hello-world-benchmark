@@ -19,6 +19,10 @@ cd -
 cd swift-kitura && docker build -t hello_swift_kitura .
 cd -
 cd swift-zewo && docker build -t hello_swift_zewo .
+cd Apache-prefork-CGI-Shell && docker build -t hello_cgi .
+cd -
+cd Apache-threaded-CGI-Shell && docker build -t hello_cgid .
+cd -
 
 docker pull node
 docker pull golang
