@@ -105,13 +105,13 @@ docker rm -f $pid
 pid=$(docker run $NET -d --name kitura_hello -p 8080:8080 hello_swift_kitura)
 sleep 1
 echo
-echo "-- HELLO Swift/Perfect --"
+echo "-- HELLO Swift/Kitura --"
 wrk -c 20 -t 4 -d 20 http://127.0.0.1:8080
 docker rm -f $pid
 
 pid=$(docker run $NET -d --name zewo_hello -p 8080:8080 hello_swift_zewo)
 sleep 1
 echo
-echo "-- HELLO Swift/Perfect --"
+echo "-- HELLO Swift/Zewo --"
 wrk -c 20 -t 4 -d 20 http://127.0.0.1:8080
 docker rm -f $pid

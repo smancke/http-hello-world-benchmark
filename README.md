@@ -27,7 +27,7 @@ Mini bechmark, comparing the performance HTTP 'hello world' on different stacks:
 | Golang - fasthttp          | 192478              | 196169            |
 | NodeJS                     | 46803               | 49421             |
 | CGI                        | 3069                |                   |
-
+| Swift/Kitura               | 35145               |                   |
 
 # Test setup
 * Ubuntu 16.04.
